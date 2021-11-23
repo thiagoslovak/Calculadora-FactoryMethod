@@ -1,6 +1,6 @@
 # Factory Method :factory:
 
-É usado para sair um pouco da questão procedural ou um codigo com muitos IFs, e trabalhar mais com orientação a objeto. O indicado é cada IF ser uma classe.
+É um padrão de projeto, é usado para sair um pouco da questão procedural ou um codigo com muitos IFs, e trabalhar mais com orientação a objeto. O indicado é cada IF ser uma classe.
 
 
 
