@@ -1,0 +1,16 @@
+program Calculadora;
+
+uses
+  ExceptionLog,
+  Forms,
+  uTelaCalculadora in 'uTelaCalculadora.pas' {Form1},
+  uCalculadora in 'uCalculadora.pas',
+  uTipoOperacao in 'uTipoOperacao.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.
