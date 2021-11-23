@@ -7,8 +7,8 @@
 ## Pequeno Exemplo em Delphi :older_man:
 
 **1º Criar uma Interface**   
-	
-unit `uCalculaOperacao`;  
+```	
+unit `uCalculaOperacao`; 
 
 interface  
 
@@ -20,10 +20,12 @@ type
 
 implementation  
 
-end.  
+end. 
+```
 
 **2º Que as classes tenha como errança a Interface**  
 
+```	
 uses  
   uCalculaOperacao;  
 
@@ -42,17 +44,20 @@ begin
   Result := AValorEsquerda + AValorDireita;  
 end;   
 
-end.  
+end. 
+```
 
 **3º Na implementação criar o OBJ com retorno da Interface.** 
 
+```	
 type  
   TCalculaOperacaoFactory = class  
   public  
     class function GetInstance(const ATipoOperacao: TTipoOperacao): ICalculaOperacao;  
   end;  
 
-class function TCalculaOperacaoFactory.GetInstance(const ATipoOperacao: TTipoOperacao):ICalculaOperacao;  
+class function TCalculaOperacaoFactory.GetInstance
+	(const ATipoOperacao:TTipoOperacao):ICalculaOperacao;  
 begin  
   case AtipoOperacao of  
     toAdicao: Result := TOperacaoAdicao.Create;  
@@ -60,4 +65,5 @@ begin
     toMultiplicacao: Result := TOperacaoMultiplicacao.Create;  
     toDivisao: Result := TOperacaoDivisao.Create;  
   end;  
-end.  
+end.
+```
